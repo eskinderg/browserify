@@ -1,0 +1,19 @@
+{
+  "name": "node-browserify",
+  "version": "1.0.0",
+  "private": true,
+  "description": "node/broserify example",
+  "main": "app.js",
+  "scripts": {
+  	"build": "browserify app.js -o bundle.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "author": "Eskinder",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  }
+}
