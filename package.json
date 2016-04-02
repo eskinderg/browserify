@@ -5,7 +5,8 @@
   "description": "node/broserify example",
   "main": "app.js",
   "scripts": {
-  	"build": "browserify app.js -o bundle.js" 
+    "build": "browserify app.js -o bundle.js",
+    "watch": "watchify app.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,10 @@
   "author": "Eskinder",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.0.0"
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.2"
   }
 }
