@@ -4,7 +4,14 @@ var $ = require('jquery');
 var button = require('./buttons/button');
 $('body').append(button);
 
-},{"./buttons/button":2,"jquery":3}],2:[function(require,module,exports){
+ var helper = require('./helper/helper.js');
+
+alert(helper(10, 6));
+
+console.log(helper(4,7));
+
+
+},{"./buttons/button":2,"./helper/helper.js":3,"jquery":4}],2:[function(require,module,exports){
 var $ = require('jquery');
 
 var button = $('<button/>').html('Click Me').on('click',function(){
@@ -13,7 +20,14 @@ var button = $('<button/>').html('Click Me').on('click',function(){
 
 module.exports = button;
 
-},{"jquery":3}],3:[function(require,module,exports){
+},{"jquery":4}],3:[function(require,module,exports){
+var add = function(x,y){
+	return x + y;
+}
+
+module.exports = add ;
+
+},{}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.2
  * http://jquery.com/
