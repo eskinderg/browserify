@@ -1,19 +1,19 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-alert("sample alert");
 
+var $ = require('jquery');
+var button = require('./buttons/button');
+$('body').append(button);
+
+},{"./buttons/button":2,"jquery":3}],2:[function(require,module,exports){
 var $ = require('jquery');
 
 var button = $('<button/>').html('Click Me').on('click',function(){
 	alert('clicked');
-	});
-$('body').append(button);
+});
 
+module.exports = button;
 
-
-
-
-
-},{"jquery":2}],2:[function(require,module,exports){
+},{"jquery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.2
  * http://jquery.com/
