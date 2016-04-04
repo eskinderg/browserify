@@ -1,8 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
 var $ = require('jquery');
-var button = require('./buttons/button');
 
+var button = require('./buttons/button');
 
 $('body').append(button);
 
@@ -18,7 +18,11 @@ esk.set({name:'eskinder'});
 
 console.log(esk.get('name'));
 
-},{"./buttons/button":2,"./helper/helper.js":3,"./user":7,"jquery":6}],2:[function(require,module,exports){
+var userView = require('./views/userView');
+
+console.log(userView);
+
+},{"./buttons/button":2,"./helper/helper.js":3,"./user":7,"./views/userView":8,"jquery":6}],2:[function(require,module,exports){
 var $ = require('jquery');
 
 var button = $('<button/>').html('Click Me').on('click',function(){
@@ -13354,8 +13358,6 @@ return jQuery;
 
 },{}],7:[function(require,module,exports){
 
-//var Backbone = require('backbone');
-
 var Backbone = require('backbone');
 
 var user = Backbone.Model.extend({
@@ -13366,5 +13368,14 @@ var user = Backbone.Model.extend({
 });
 
 module.exports = user;
+
+},{"backbone":4}],8:[function(require,module,exports){
+var Backbone = require('backbone');
+
+var userView = Backbone.View.extend({
+
+});
+
+module.exports = userView;
 
 },{"backbone":4}]},{},[1]);

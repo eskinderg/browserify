@@ -1,7 +1,7 @@
 
 var $ = require('jquery');
-var button = require('./buttons/button');
 
+var button = require('./buttons/button');
 
 $('body').append(button);
 
@@ -16,3 +16,7 @@ var esk = new user();
 esk.set({name:'eskinder'});
 
 console.log(esk.get('name'));
+
+var userView = require('./views/userView');
+
+console.log(userView);
