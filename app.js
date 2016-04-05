@@ -1,22 +1,24 @@
 
-var $ = require('jquery');
+//var $ = require('jquery');
 
-var button = require('./buttons/button');
+//var button = require('./buttons/button');
 
-$('body').append(button);
+//$('body').append(button);
 
-var helper = require('./helper/helper.js');
+//var helper = require('./helper/helper.js');
 
-console.log(helper(4,7));
+//console.log(helper(4,7));
 
-var user = require('./user');
+//var user = require('./models/user');
 
-var esk = new user();
+//var esk = new user();
 
-esk.set({name:'eskinder'});
+//esk.set({name:'eskinder'});
 
-console.log(esk.get('name'));
+//console.log(esk.get('name'));
 
-var userView = require('./views/userView');
 
-console.log(userView);
+
+var UserView = require('./views/UserView');
+
+var userView = new UserView({el:'body'});
