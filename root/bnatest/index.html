@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BNAApp Tests</title>
+  <link rel="stylesheet" href="/node_modules/mocha/mocha.css" />
+  <style>
+    #todo-app {display: none; }
+  </style>
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="/node_modules/chai/chai.js"></script>
+  <script src="/node_modules/mocha/mocha.js"></script>
+  <script src="/js/lib/require.js"></script>
+  <script src="/bnatest/lib/sinon.js"></script>
+
+  <script src="main.js"></script>
+  <script src="../bnatest/setup.js"></script>
+  <script src="../bnatest/app.test.js"></script>
+  <script src="../bnatest/sampleClass.test.js"></script>
+
+  <script>
+        require(['app'], function() {
+          mocha.run();
+        });
+  </script>
+</body>
+</html>

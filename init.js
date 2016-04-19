@@ -1,0 +1,1 @@
+var BNAapp = require('./app');

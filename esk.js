@@ -24,7 +24,7 @@ var UserView = require('./views/UserView');
 
 var userView = new UserView({el:'body'});
 
-},{"./views/UserView":7}],2:[function(require,module,exports){
+},{"./views/UserView":8}],2:[function(require,module,exports){
 var Backbone = require('backbone');
 
 module.exports = Backbone.Collection.extend({
@@ -33,7 +33,10 @@ module.exports = Backbone.Collection.extend({
     }
 });
 
-},{"backbone":4}],3:[function(require,module,exports){
+},{"backbone":5}],3:[function(require,module,exports){
+var BNAapp = require('./app');
+
+},{"./app":1}],4:[function(require,module,exports){
 
 var Backbone = require('backbone');
 
@@ -46,7 +49,7 @@ var user = Backbone.Model.extend({
 
 module.exports = user;
 
-},{"backbone":4}],4:[function(require,module,exports){
+},{"backbone":5}],5:[function(require,module,exports){
 (function (global){
 //     Backbone.js 1.3.3
 
@@ -1970,7 +1973,7 @@ module.exports = user;
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":5,"underscore":6}],5:[function(require,module,exports){
+},{"jquery":6,"underscore":7}],6:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.3
  * http://jquery.com/
@@ -11814,7 +11817,7 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -13364,7 +13367,7 @@ return jQuery;
   }
 }.call(this));
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 var _ = require('underscore');
 var $ = require('jquery');
 var Backbone = require('backbone');
@@ -13400,4 +13403,4 @@ var UserView = Backbone.View.extend({
 
 module.exports = UserView;
 
-},{"../collections/UserCollection":2,"../models/user":3,"backbone":4,"jquery":5,"underscore":6}]},{},[1]);
+},{"../collections/UserCollection":2,"../models/user":4,"backbone":5,"jquery":6,"underscore":7}]},{},[3]);

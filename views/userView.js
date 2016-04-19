@@ -8,7 +8,6 @@ var UserCollection = require('../collections/UserCollection');
 
 var UserView = Backbone.View.extend({
     tagName: 'li',
-
     events:{
       'click #add-input' : 'getUser',
     },
@@ -19,7 +18,7 @@ var UserView = Backbone.View.extend({
       _.bindAll(this,'render');
       this.userList.bind("add",function(model){
           thisView.render(model);
-      })},
+      });},
 
       getUser: function(){
           var user_name = $('#input').val();
@@ -28,7 +27,7 @@ var UserView = Backbone.View.extend({
 
       render: function(model){
           $("#friends-list").append("<li>" + model.get("name") + "</li>");
-          console.log("rendered");
+          //console.log("rendered");
       }
 });
 

@@ -1,0 +1,12 @@
+{
+  "name": "BNAApp"
+, "dependencies": {
+    "requirejs": "latest"
+  , "connect": "2.7.0"
+  }
+, "devDependencies": {
+    "mocha": "latest"
+  , "chai": "latest"
+  , "gulp": "3.8.0"
+  }
+}
